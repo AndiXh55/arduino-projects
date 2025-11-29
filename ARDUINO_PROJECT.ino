@@ -21,10 +21,8 @@ void setup() {
   pinMode(GREEN_LED_PIN, OUTPUT);
   //a servo to pin
   servo.attach(servoPin);
-  servo.write(53);  // Initial position of the servo. It took a bit of trial and
-  //error to find the right angle for the initial position. 53 degrees
-  //was the best angle I found so that the servo was parallel to my table.
-
+  servo.write(53);  // Initial position of the servo
+  
   //configure ultrasonic sensor pins
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
